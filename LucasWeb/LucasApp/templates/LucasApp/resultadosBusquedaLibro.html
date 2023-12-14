@@ -1,0 +1,11 @@
+<p> Estamos buscando el Autor: {{autor}}</p>
+
+
+{% if libros %}
+<ul>
+{% for libro in libros %}
+    <li>Libro: {{libro.titulolibro}}</li>
+    <li>Autor: {{libro.autor}}</li>
+{% endfor %}
+</ul>
+{% endif %}

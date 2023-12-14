@@ -1,0 +1,11 @@
+<p> Estamos buscando el director: {{director}}</p>
+
+
+{% if peliculas %}
+<ul>
+{% for pelicula in peliculas %}
+    <li>Pelicula: {{pelicula.titulo}}</li>
+    <li>Director: {{pelicula.director}}</li>
+{% endfor %}
+</ul>
+{% endif %}
